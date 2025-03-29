@@ -6,6 +6,7 @@ This is a **Flask-based API** that performs text summarization using the `NLTK` 
 ---
 
 🔧 Installation
+
 1️⃣ Prerequisites
 - Python 3.x installed on your system
 - Required Python libraries: `Flask` and `NLTK`
