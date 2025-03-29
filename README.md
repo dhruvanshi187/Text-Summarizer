@@ -27,6 +27,7 @@ nltk.download('stopwords')
 ---
 
 🚀 Usage
+
  1️⃣ Run the API
 Start the Flask server using the following command:
 ```bash
@@ -54,6 +55,7 @@ Send a **POST request** with text data to get the summarized output.
 ---
 
  📌 Features
+ 
 ✅ Extracts key sentences using `NLTK`
 ✅ Uses `Punkt` tokenizer and `stopwords` for processing
 ✅ Returns summary in **JSON format**
@@ -62,6 +64,7 @@ Send a **POST request** with text data to get the summarized output.
 ---
 
  🛠 Technologies Used
+ 
 - **Flask** - Web framework for API
 - **NLTK** - Library for natural language processing
 - **Python** - Backend programming language
@@ -69,17 +72,20 @@ Send a **POST request** with text data to get the summarized output.
 ---
 
 📌 Limitations
+
 🚨 May not work well for extremely short texts
 🚨 Works best with well-structured paragraphs
 
 ---
 
  👨‍💻 Author
+ 
 Developed by Dhruvanshi Senjaliya
 
 ---
 
  📜 License
+ 
 This project is open-source and available under the MIT License.
 
 
