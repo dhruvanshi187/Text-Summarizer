@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>  <!-- ✅ This will show "Text Summarizer" in the browser tab -->
+    <style>
+        body {
+            background: linear-gradient(to right, #d3cce3, #e9e4f0);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #eaffea;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: darkviolet;
+        }
+        .summary-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 16px;
+            text-align: left;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Text Summarization</h2>
+    <form action="/" method="POST">
+        <textarea name="user_text" placeholder="Enter text to summarize...">{{ request.form['user_text'] if request.form['user_text'] else '' }}</textarea>
+        <br>
+        <button type="submit">Summarize</button>
+    </form>
+    
+    {% if summary %}
+    <div class="summary-box">
+        <h3>Summary:</h3>
+        <p>{{ summary }}</p>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
+
+
+
+
