@@ -57,8 +57,11 @@ Send a **POST request** with text data to get the summarized output.
  📌 Features
  
 ✅ Extracts key sentences using `NLTK`
+
 ✅ Uses `Punkt` tokenizer and `stopwords` for processing
+
 ✅ Returns summary in **JSON format**
+
 ✅ Simple and easy-to-use API
 
 ---
@@ -80,12 +83,12 @@ Send a **POST request** with text data to get the summarized output.
 
  👨‍💻 Author
  
-Developed by Dhruvanshi Senjaliya
+Developed by **Dhruvanshi Senjaliya**
 
 ---
 
  📜 License
  
-This project is open-source and available under the MIT License.
+This project is **open-source** and available under the MIT License.
 
 
