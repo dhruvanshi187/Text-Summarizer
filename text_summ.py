@@ -4,7 +4,7 @@ from nltk.tokenize import sent_tokenize
 from nltk.corpus import stopwords
 from collections import Counter
 
-# Download required NLTK resources
+
 nltk.download("punkt")
 nltk.download("stopwords")
 
